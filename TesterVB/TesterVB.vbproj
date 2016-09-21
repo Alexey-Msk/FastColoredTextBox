@@ -63,6 +63,7 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' " />
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -113,9 +114,7 @@
     <Compile Include="ConsoleSample.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConsoleTextBox.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="ConsoleTextBox.vb" />
     <Compile Include="CustomFoldingSample.vb">
       <SubType>Form</SubType>
     </Compile>
